@@ -1,8 +1,8 @@
 const header = `// ==UserScript==
-// @name         Liveleak, Vimeo, Youtube - play on hover
+// @name         Liveleak, Vimeo, Youtube - preview on hover
 // @namespace    https://lukaszmical.pl/
-// @version      0.1.0
-// @description  try to take over the world!
+// @version      0.1.1
+// @description  Liveleak, Vimeo, Youtube - play on hover
 // @author       Łukasz Micał
 // @match        *://*/*
 // @exclude      https://www.liveleak.com/*
