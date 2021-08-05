@@ -1,8 +1,8 @@
 const header = `// ==UserScript==
-// @name         Liveleak, Vimeo, Youtube - preview on hover
+// @name         Liveleak, Vimeo, Youtube, Streamable - preview on hover
 // @namespace    https://lukaszmical.pl/
-// @version      0.1.1
-// @description  Liveleak, Vimeo, Youtube - play on hover
+// @version      0.2.0
+// @description  Liveleak, Vimeo, Youtube, Streamable - play on hover
 // @author       Łukasz Micał
 // @match        *://*/*
 // @exclude      https://www.liveleak.com/*
@@ -10,6 +10,7 @@ const header = `// ==UserScript==
 // @exclude      https://player.vimeo.com/*
 // @exclude      https://youtube.com/*
 // @exclude      https://youtu.be/*
+// @exclude      https://streamable.com/*
 // @grant        none
 // ==/UserScript==
 `;
