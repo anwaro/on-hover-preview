@@ -1,10 +1,10 @@
 type VideoConfig = {
     width: number;
     height: number;
-}
+};
 
 export interface VideoProvider {
-    config: VideoConfig
+    config: VideoConfig;
 
     embeddedVideoUrl(element: HTMLAnchorElement): Promise<string>;
 

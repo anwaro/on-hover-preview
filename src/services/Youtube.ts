@@ -5,7 +5,7 @@ export default class Youtube extends BaseProvider implements VideoProvider {
     public config = {
         width: 500,
         height: 300,
-    }
+    };
 
     public async embeddedVideoUrl({
         href,
@@ -16,9 +16,7 @@ export default class Youtube extends BaseProvider implements VideoProvider {
         let time = urlParams.get('t') || '0';
 
         if (href.includes('//youtu.be/')) {
-            const match = href.match(/\.be\/(?<id>[^?/]+).*$/);
-            const {groups: {id: matchId} = {id}} = match || {groups: {id}};
-            id = matchId;
+            id = this.extractId(href, /\.be\/(?<id>[^?/]+).*$/);
         } else if (href.includes('youtube.com/attribution_link')) {
             const url = decodeURIComponent(urlParams.get('u') || `/watch?v=${id}`);
             const attrUrl = new URL(`https://youtube.com${url}`);

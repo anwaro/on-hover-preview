@@ -5,13 +5,11 @@ export default class Streamable extends BaseProvider implements VideoProvider {
     public config = {
         width: 500,
         height: 300,
-    }
+    };
 
     public async embeddedVideoUrl({href}: HTMLAnchorElement): Promise<string> {
-        const {
-            // @ts-ignore
-            groups: {id},
-        } = href.match(/\.com\/([s|o]\/)?(?<id>[^?\/]+).*$/);
+        const id = this.extractId(href, /\.com\/([s|o]\/)?(?<id>[^?/]+).*$/);
+
         return `https://streamable.com/o/${id}?autoplay=1`;
     }
 

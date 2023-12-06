@@ -10,4 +10,14 @@ export default abstract class BaseProvider {
                 : prev;
         }, [] as HTMLAnchorElement[]);
     }
+
+    extractId(url: string, match: RegExp): string {
+        const result = url.match(match);
+
+        if (result) {
+            return result.groups?.id || '';
+        }
+
+        return '';
+    }
 }

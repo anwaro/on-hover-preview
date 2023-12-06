@@ -1,8 +1,8 @@
 import setStyle from '../helpers/setStyle';
-import {VideoProvider} from "../interfaces/VideoProvider";
+import {VideoProvider} from '../interfaces/VideoProvider';
 
 export default class IFrame {
-    static ID = 'play-on-hover-popup'
+    static ID = 'play-on-hover-popup';
     private readonly iframe: HTMLIFrameElement;
     private readonly popup: HTMLDivElement;
     private iframeActive = false;
@@ -17,7 +17,8 @@ export default class IFrame {
 
     setupIframe() {
         this.iframe.allowFullscreen = true;
-        this.iframe.allow = "autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        this.iframe.allow =
+            'autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share';
 
         setStyle(this.iframe, {
             height: '100%',
@@ -36,7 +37,7 @@ export default class IFrame {
             'z-index': 9999,
             'box-shadow': 'rgb(218, 218, 218) 1px 1px 5px',
         });
-        this.popup.id = IFrame.ID
+        this.popup.id = IFrame.ID;
 
         if (!document.querySelector(`#${IFrame.ID}`)) {
             document.body.appendChild(this.popup);
