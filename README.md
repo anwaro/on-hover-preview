@@ -42,5 +42,5 @@ Link to github: [github](https://github.com/anwaro/on-hover-preview)
 ## Preview
 | Streamable                         | Youtube                            |
 |------------------------------------|------------------------------------|
-| ![Preview](./assets/example-1.png) | ![Preview](./assets/example-2.png) |
+| ![Preview](https://raw.githubusercontent.com/anwaro/on-hover-preview/main/assets/example-1.png) | ![Preview](https://raw.githubusercontent.com/anwaro/on-hover-preview/main/assets/example-2.png) |
 

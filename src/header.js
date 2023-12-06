@@ -1,7 +1,7 @@
 const header = `// ==UserScript==
 // @name         Play video on hover
 // @namespace    https://lukaszmical.pl/
-// @version      0.3.1
+// @version      0.3.2
 // @description  Facebook, Vimeo, Youtube, Streamable, Tiktok, Instagram , Twitter - play on hover
 // @author       Łukasz Micał
 // @match        *://*/*
