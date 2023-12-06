@@ -1,17 +1,20 @@
 const header = `// ==UserScript==
-// @name         Liveleak, Vimeo, Youtube, Streamable - preview on hover
+// @name         Play video on hover
 // @namespace    https://lukaszmical.pl/
-// @version      0.2.0
-// @description  Liveleak, Vimeo, Youtube, Streamable - play on hover
+// @version      0.3.0
+// @description  Facebook, Vimeo, Youtube, Streamable, Tiktok, Instagram , Twitter - play on hover
 // @author       Łukasz Micał
 // @match        *://*/*
-// @exclude      https://www.liveleak.com/*
 // @exclude      https://vimeo.com/*
 // @exclude      https://player.vimeo.com/*
 // @exclude      https://youtube.com/*
 // @exclude      https://youtu.be/*
 // @exclude      https://streamable.com/*
-// @grant        none
+// @exclude      https://facebbok.com/*
+// @exclude      https://twitter.com/*
+// @exclude      https://instagram.com/*
+// @exclude      https://tiktok.com/*
+// @icon         https://static-00.iconduck.com/assets.00/cursor-hover-icon-512x439-vou7bdac.png
 // ==/UserScript==
 `;
 

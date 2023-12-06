@@ -37,7 +37,6 @@
             "node_modules/@types"
         ],
         "preserveConstEnums": true,
-        "suppressImplicitAnyIndexErrors": true,
         "forceConsistentCasingInFileNames": true,
         "incremental": true
     },

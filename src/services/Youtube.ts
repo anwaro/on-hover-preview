@@ -2,6 +2,11 @@ import {VideoProvider} from '../interfaces/VideoProvider';
 import BaseProvider from './BaseProvider';
 
 export default class Youtube extends BaseProvider implements VideoProvider {
+    public config = {
+        width: 500,
+        height: 300,
+    }
+
     public async embeddedVideoUrl({
         href,
         search,
